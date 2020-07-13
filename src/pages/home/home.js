@@ -161,61 +161,61 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                <h1>Hi, this is NOT a bunker game ;)</h1>
-                <h1>Your name is {this.state.thisPlayerName}</h1>
-                <h1>Active session is {this.state.activeSessionName}</h1>
+                {/*<h1>Hi, this is NOT a bunker game ;)</h1>*/}
+                {/*<h1>Your name is {this.state.thisPlayerName}</h1>*/}
+                {/*<h1>Active session is {this.state.activeSessionName}</h1>*/}
 
-                <label>Player Name:</label>
-                <input type="text" value={this.state.value} onChange={this.handleNameChange}/>
-                <div>
-                    <button onClick={() => this.createPlayer(this.state.selectedPlayer)}>Create player</button>
-                </div>
-                <div>
-                    <button onClick={() => this.setActivePlayer(this.state.selectedPlayer)}>Set active player</button>
-                </div>
-                <div>
-                    <button onClick={() => this.deletePlayer(this.state.selectedPlayer)}>Delete Player</button>
-                </div>
-                <div>
-                    <button onClick={() => this.deleteAllPlayers()}>Clear Players</button>
-                </div>
+                {/*<label>Player Name:</label>*/}
+                {/*<input type="text" value={this.state.value} onChange={this.handleNameChange}/>*/}
+                {/*<div>*/}
+                {/*    <button onClick={() => this.createPlayer(this.state.selectedPlayer)}>Create player</button>*/}
+                {/*</div>*/}
+                {/*<div>*/}
+                {/*    <button onClick={() => this.setActivePlayer(this.state.selectedPlayer)}>Set active player</button>*/}
+                {/*</div>*/}
+                {/*<div>*/}
+                {/*    <button onClick={() => this.deletePlayer(this.state.selectedPlayer)}>Delete Player</button>*/}
+                {/*</div>*/}
+                {/*<div>*/}
+                {/*    <button onClick={() => this.deleteAllPlayers()}>Clear Players</button>*/}
+                {/*</div>*/}
 
 
-                <label>Session Name:</label>
-                <input type="text" value={this.state.value} onChange={this.handleChange}/>
-                <div>
-                    <button onClick={() => this.createSession(this.state.selectedSession)}>Create session</button>
-                </div>
-                <div>
-                    <button onClick={() => this.connectToSession(this.state.selectedSession)}>Connect to session
-                    </button>
-                </div>
-                <div>
-                    <button onClick={() => this.leaveSession()}>Leave session</button>
-                </div>
-                <div>
-                    <button onClick={() => this.deleteSession(this.state.selectedSession)}>Delete session</button>
-                </div>
-                <div>
-                    <button onClick={() => this.deleteAllSessions()}>Clear Sessions</button>
-                </div>
-                <label>Sessions:</label>
-                <ul className="list-group">
-                    {this.state.sessionList.map(listitem => (
-                        <li className="list-group-item list-group-item-primary">
-                            {listitem['name']}
-                        </li>
-                    ))}
-                </ul>
+                {/*<label>Session Name:</label>*/}
+                {/*<input type="text" value={this.state.value} onChange={this.handleChange}/>*/}
+                {/*<div>*/}
+                {/*    <button onClick={() => this.createSession(this.state.selectedSession)}>Create session</button>*/}
+                {/*</div>*/}
+                {/*<div>*/}
+                {/*    <button onClick={() => this.connectToSession(this.state.selectedSession)}>Connect to session*/}
+                {/*    </button>*/}
+                {/*</div>*/}
+                {/*<div>*/}
+                {/*    <button onClick={() => this.leaveSession()}>Leave session</button>*/}
+                {/*</div>*/}
+                {/*<div>*/}
+                {/*    <button onClick={() => this.deleteSession(this.state.selectedSession)}>Delete session</button>*/}
+                {/*</div>*/}
+                {/*<div>*/}
+                {/*    <button onClick={() => this.deleteAllSessions()}>Clear Sessions</button>*/}
+                {/*</div>*/}
+                {/*<label>Sessions:</label>*/}
+                {/*<ul className="list-group">*/}
+                {/*    {this.state.sessionList.map(listitem => (*/}
+                {/*        <li className="list-group-item list-group-item-primary">*/}
+                {/*            {listitem['name']}*/}
+                {/*        </li>*/}
+                {/*    ))}*/}
+                {/*</ul>*/}
 
-                <label>Players:</label>
-                <ul className="list-group">
-                    {this.state.playersList.map(listitem => (
-                        <li className="list-group-item list-group-item-primary">
-                            {listitem['name']}
-                        </li>
-                    ))}
-                </ul>
+                {/*<label>Players:</label>*/}
+                {/*<ul className="list-group">*/}
+                {/*    {this.state.playersList.map(listitem => (*/}
+                {/*        <li className="list-group-item list-group-item-primary">*/}
+                {/*            {listitem['name']}*/}
+                {/*        </li>*/}
+                {/*    ))}*/}
+                {/*</ul>*/}
 
             </div>
         );
